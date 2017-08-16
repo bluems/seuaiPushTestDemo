@@ -1,6 +1,5 @@
-package kr.nazuna.seuaipushtestdemo;
+package kr.happyline.LuckyPoint;
 
-import android.app.DownloadManager;
 import android.util.Log;
 
 import com.google.firebase.iid.FirebaseInstanceId;
@@ -21,6 +20,7 @@ import okhttp3.RequestBody;
 public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
     private static final String TAG = "MyFirebaseIIDService";
     private static final String SETTINGS_NAME = "idData";
+    private static  final  String url="http://209.126.67.94:8880";
 
     @Override
     public void onTokenRefresh() {
@@ -41,7 +41,7 @@ public class MyFirebaseInstanceIDService extends FirebaseInstanceIdService {
                 .build();
 
         Request request = new Request.Builder()
-                .url("http://150.95.140.215:3300/push_token")
+                .url(url+"/push_token")
                 .post(body)
                 .build();
 

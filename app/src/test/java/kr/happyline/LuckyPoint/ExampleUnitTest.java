@@ -1,4 +1,4 @@
-package kr.nazuna.seuaipushtestdemo;
+package kr.happyline.LuckyPoint;
 
 import org.junit.Test;
 

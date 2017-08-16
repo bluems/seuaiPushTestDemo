@@ -1,4 +1,4 @@
-package kr.nazuna.seuaipushtestdemo;
+package kr.happyline.LuckyPoint;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -6,15 +6,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.media.RingtoneManager;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /**
  * Created by BSH on 2017-06-20.

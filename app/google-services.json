@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1048141918719",
-    "firebase_url": "https://seuaipushtestdemojava.firebaseio.com",
-    "project_id": "seuaipushtestdemojava",
-    "storage_bucket": "seuaipushtestdemojava.appspot.com"
+    "project_number": "524243100640",
+    "firebase_url": "https://luckypoint-34665.firebaseio.com",
+    "project_id": "luckypoint-34665",
+    "storage_bucket": "luckypoint-34665.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1048141918719:android:006b48e42f77e542",
+        "mobilesdk_app_id": "1:524243100640:android:9b7de2972a0ca822",
         "android_client_info": {
-          "package_name": "kr.nazuna.seuaipushtestdemo"
+          "package_name": "kr.happyline.LuckyPoint"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1048141918719-dge3abi2ij79sm602kahcqv2um2kvp2j.apps.googleusercontent.com",
+          "client_id": "524243100640-atr5f2ll1oaa57don3ftqu6aon69q5v7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCQUXzEWNuN7rm5bTeNSMq_zvlIzXvNq8o"
+          "current_key": "AIzaSyBkGw7Q9e2tqNHCYOfkLKWByussXH4VTDA"
         }
       ],
       "services": {

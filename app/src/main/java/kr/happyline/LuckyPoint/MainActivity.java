@@ -1,10 +1,9 @@
-package kr.nazuna.seuaipushtestdemo;
+package kr.happyline.LuckyPoint;
 
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -19,7 +18,6 @@ import android.webkit.WebChromeClient;
 
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.messaging.FirebaseMessaging;
-import com.google.firebase.messaging.FirebaseMessagingService;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,14 +30,16 @@ import okhttp3.RequestBody;
 public class MainActivity extends AppCompatActivity {
     private WebView mWebView;//웹뷰s
     private WebSettings mWebSettings;//웹뷰 세팅파일
-    private static final String url = "http://150.95.140.215:3300";
+    private static final String url = "http://209.126.67.94:8880";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final Context myApp = this;
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            WebView.setWebContentsDebuggingEnabled(true);
+        }
         if (!setTitleColor()) {
 
         }
@@ -94,12 +94,11 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean setTitleColor() {
         try {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                WebView.setWebContentsDebuggingEnabled(true);
+
                 if (Build.VERSION.SDK_INT >= 21) {
                     getWindow().setStatusBarColor(Color.parseColor("#F3962F"));
                 }
-            }
+
         } catch (Exception e) {
             Log.d("error", e.getMessage());
             return false;
@@ -148,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     .build();
 
             Request request = new Request.Builder()
-                    .url("http://150.95.140.215:3300/push_token")
+                    .url(url+"/push_token")
                     .post(body)
                     .build();
 

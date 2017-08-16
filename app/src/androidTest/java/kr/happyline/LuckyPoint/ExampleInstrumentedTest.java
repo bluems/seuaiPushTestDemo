@@ -1,4 +1,4 @@
-package kr.nazuna.seuaipushtestdemo;
+package kr.happyline.LuckyPoint;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

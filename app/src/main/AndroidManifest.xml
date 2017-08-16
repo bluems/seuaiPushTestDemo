@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kr.nazuna.seuaipushtestdemo">
+    package="kr.happyline.LuckyPoint">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="BET 999.99x"
+        android:label="Lucky Point"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         //android:label = 노출되는 앱 이름 겸 백그라운드 노티 타이틀. 원값 보존 : @string/app_name
-        <activity android:name=".MainActivity">
+        <activity android:name="kr.happyline.LuckyPoint.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,12 +20,12 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".MyFirebaseMessagingService">
+        <service android:name="kr.happyline.LuckyPoint.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name=".MyFirebaseInstanceIDService">
+        <service android:name="kr.happyline.LuckyPoint.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
